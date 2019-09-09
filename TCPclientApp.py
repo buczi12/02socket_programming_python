@@ -6,15 +6,16 @@ Created on Sun Sep  8 20:09:47 2019
 """
 
 from socket import *
-serverName = 'serverName'
+serverName = 'localhost'
 serverPort = 'serverPort'
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName, serverPort))
-sentence = input('lowercase input word\n')
+sentence = input('Lowercase input word\n')
 clientSocket.send(sentence.encode())
 modifiedSentence = clientSocket.recv(1024)
-print('Z servera: ', modifiedSentence.decode())
+#print modified sentence from server
+print('Modified sentence from server: ', modifiedSentence.decode())
 clientSocket.close()
 
 
