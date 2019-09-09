@@ -4,7 +4,6 @@ Created on Sun Sep  8 20:09:47 2019
 
 @author: Bartek
 """
-
 from socket import *
 serverName = 'localhost'
 serverPort = 'serverPort'

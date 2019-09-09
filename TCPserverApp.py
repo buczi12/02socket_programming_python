@@ -4,7 +4,6 @@ Created on Sun Sep  8 20:10:34 2019
 
 @author: Bartek
 """
-
 from socket import *
 #arbitrary port for communication
 serverPort = 12000

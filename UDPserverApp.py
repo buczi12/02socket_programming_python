@@ -13,3 +13,8 @@ while True:
     message, clientAddress = serverSocket.recvfrom(2048)
     modifiedMessage = message.decode().upper()
     serverSocket.sendto(modifiedMessage.encode(), clientAddress)
+    
+#TODO:
+    # - select module, multiple clients to one server
+    # - threading module, multiplie clients to one server at the same time
+    # - HTTP server: BaseHTTPServer, SimpleHTTPServer modules
